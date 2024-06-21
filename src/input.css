@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --btn-bg-color: #111b47;
+    --main-text-color: #091133;
+    --secondary-text-color: #505f98;
+  }
+  body{
+    font-family: "Roboto", sans-serif;
+  }
+button {
+   
+ width: 150px;
+   border:1px solid #111b47;
+   padding: 2px;
+  }
+  h1 {
+    color: var(--main-text-color);
+    font-size: 2.125rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+  } 
+  p{
+    color: var(--secondary-text-color);
+   
+  }
+  section{
+    display: flex;
+
+  }
+  .banners{
+    margin: 35px;
+  }
+  
+/* 
+body {
+  padding: 20px;
+}
+
+li {
+  display: inline-block;
+  color: var(--secondary-text-color);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
