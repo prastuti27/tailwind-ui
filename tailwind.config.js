@@ -3,18 +3,23 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
 
     theme: {
+      extend: {
       colors: {
       
-        purple:  "#37447E",
-        darkpurple: "#111b47",
-        lightpurple: "#505F98",
-        black:"#000000",
-        white:"#ffffff",
+        purple: {
+          default: "#37447E",
+          dark: "#111b47",
+          light: "#505F98",
+        },
+        
         footer:"#E7ECFF",
         grey:"#CDD1D4"
 
       },
-      extend: {},
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+      },
+      },
     },
 
     

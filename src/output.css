@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -616,6 +616,11 @@ video {
   z-index: 30;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -640,10 +645,6 @@ video {
 
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
 }
 
 .mt-0 {
@@ -718,6 +719,10 @@ video {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
@@ -739,14 +744,14 @@ video {
   border-color: rgb(205 209 212 / var(--tw-border-opacity));
 }
 
-.bg-darkpurple {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 27 71 / var(--tw-bg-opacity));
-}
-
 .bg-footer {
   --tw-bg-opacity: 1;
   background-color: rgb(231 236 255 / var(--tw-bg-opacity));
+}
+
+.bg-purple-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 27 71 / var(--tw-bg-opacity));
 }
 
 .object-contain {
@@ -777,6 +782,15 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.font-roboto {
+  font-family: Roboto, sans-serif;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -812,19 +826,19 @@ video {
   font-weight: 600;
 }
 
-.text-darkpurple {
+.text-purple-dark {
   --tw-text-opacity: 1;
   color: rgb(17 27 71 / var(--tw-text-opacity));
 }
 
-.text-lightpurple {
-  --tw-text-opacity: 1;
-  color: rgb(80 95 152 / var(--tw-text-opacity));
-}
-
-.text-purple {
+.text-purple-default {
   --tw-text-opacity: 1;
   color: rgb(55 68 126 / var(--tw-text-opacity));
+}
+
+.text-purple-light {
+  --tw-text-opacity: 1;
+  color: rgb(80 95 152 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -838,10 +852,6 @@ video {
   --secondary-text-color: #505f98;
 }
 
-body{
-  font-family: "Roboto", sans-serif;
-}
-
 button {
   width: 150px;
   border:1px solid #111b47;
@@ -850,10 +860,14 @@ button {
 
 h1 {
   color: var(--main-text-color);
-  font-size: 2.125rem;
+  /* font-size: 2.125rem; */
   font-weight: bold;
   line-height: 2.5rem;
 }
+
+/* h2{
+    font-size: 1.5rem;
+  } */
 
 p{
   color: var(--secondary-text-color);
@@ -864,7 +878,7 @@ section{
 }
 
 .banners{
-  margin: 35px;
+  margin: 36px;
 }
 
 /* 
@@ -995,11 +1009,5 @@ header {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:w-full {
-    width: 100%;
   }
 }
